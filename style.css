@@ -215,6 +215,10 @@ html, body{
     }
 
     .text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding-left: 0;
         margin-right: 0;
         max-width: 100%;
@@ -223,6 +227,7 @@ html, body{
 
     .text-container h1 {
         font-size: 40px;
+        line-height: 2.2rem;
     }
 
     .tilted-section img {
@@ -237,8 +242,8 @@ html, body{
     }
 
     .tilted-section img {
-        height: 40%;
-        width: 100%;
+        height: 80vw;
+        width: 80vw;
     }
 }
 /* Page 1 button Settings //////////////////////////*/
@@ -364,30 +369,41 @@ html, body{
     width: 5%;
 }
 
+@media (max-width: 480px) {
+    .page2 .content h1{
+        font-size: 80px;
+    }
+}
+
 /*contect section /////////////////////////////////////////////////////*/
 .content-section {
     height: 100vh; /* Adjusted to fit the screen height */
     display: flex;
     align-items: center;
-    padding: 0px 5%; /* Reduce the padding to prevent overflow */
+    padding: 0px; /* Reduce the padding to prevent overflow */
     background-color: #f3f3f3;
     box-sizing: border-box; /* Ensure padding is included in width calculations */
     overflow: hidden; /* Prevent any overflow issues */
+    flex-direction: row; /* Default flex direction */
 }
+
 .content-section img {
-    height: 100%; /* Fit within the section */
-    max-width: 50%; /* Constrain image width */
+    max-width: 100%; /* Fit image within the available space */
+    max-height: 100%; /* Ensure it doesn't exceed section height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
     margin-right: 50px;
-    bottom: 0;
 }
+
 .text-content {
     max-width: 45%; 
     margin-top: 100px;
 }
+
 .text-content h3 {
     font-size: 35px;
     margin-bottom: 10px;
 }
+
 .text-content p {
     font-size: 21.5px;
     color: #333;
@@ -399,31 +415,22 @@ html, body{
     .content-section {
         padding: 50px 5%;
     }
-    .content-section img {
-        height: 80vh; /* Adjust for large screens */
-        width: auto;
-    }
     .text-content {
         margin-top: auto;
     }
 }
-@media (max-width: 1280px) {
-    .content-section img{
-        height: auto;
-        width: auto;
-    }
-}
+
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
         padding: 50px 5%;
-        height: auto;
+        height: auto; /* Adjust height for smaller screens */
         text-align: center;
     }
     .content-section img {
-        height: auto;
-        max-width: 80%;
         margin-bottom: 30px;
+        max-width: 80%;
+        height: auto;
     }
     .text-content {
         margin-top: 0;
@@ -438,14 +445,18 @@ html, body{
 
 @media (max-width: 480px) {
     .content-section {
-        padding: 20px 2%;
+        padding: 20px 5%;
     }
     .content-section img {
         max-width: 100%;
         height: auto;
     }
+    .text-content {
+        max-width: 90%; 
+        margin-top: 100px;
+    }
     .text-content h3 {
-        font-size: 24px;
+        font-size: 30px;
     }
     .text-content p {
         font-size: 16px;
@@ -594,8 +605,7 @@ video {
 
             @media (max-width: 768px) {
                 .ser{
-                    display: flex;
-                    flex-direction: column;
+                    display: none;
                 }
                 .page2-right{
                     display: none;                    ;
