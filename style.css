@@ -496,7 +496,7 @@ html, body{
     width: 100%;
     max-width: 360px;
     aspect-ratio: 9 / 16; /* Ensures proper aspect ratio */
-
+    overflow: hidden;
     position: relative;
     transform: translateY(0); /* Initial transform for scroll animation */
     transition: transform 0.3s ease-out; /* Smooth scroll movement */
