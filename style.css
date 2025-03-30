@@ -85,6 +85,7 @@ body {
     align-items: center;
     z-index: inherit;
     padding-left: 100px;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 100, 220));
 }
 .header .logo {
     height: 50px;
@@ -184,7 +185,7 @@ body {
 }
 .landing video{
     z-index: -1;
-    width: 1920px;
+    width: 100%;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -270,7 +271,7 @@ body {
 }
 
 .hollow{
-    font-size: 80px;
+    /* font-size: 80px; */
     font-weight: bold;
     color: white;
     text-shadow: 
@@ -328,4 +329,41 @@ body {
     top: 0;
     right: 0;
     z-index: 2;
+}
+
+
+/* SCreen Handler */
+@media (min-width: 1024px){
+    .header .logo {
+        height: 50px;
+    }
+    .nav-menu {
+        top: -135vh;
+        padding-top: 100px;
+    }
+    .nav-menu a {
+        font-size: 80px;
+    }
+    .landing .landing-cont h1{
+        margin: -1px 0px;
+        font-size: 55px;
+    }
+    .landing .landing-cont .main-headings-bg{
+        padding: 2px 10px;
+    }
+    .landing .landing-cont .landing-para{
+        margin-bottom: 4px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .landing .landing-cont i{
+        font-size: 12px;
+    }
+    .landing .landing-btn .button{
+        font-weight: 600;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 15px;
+        padding: 2.7% 2.34rem;
+        border-radius: 8px;
+    }
 }
