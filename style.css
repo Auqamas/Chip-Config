@@ -366,4 +366,9 @@ body {
         padding: 2.7% 2.34rem;
         border-radius: 8px;
     }
+    .moving-div .move img{
+        height: 2.45vw;
+        margin: 0 1vw;
+        filter: grayscale(100%);
+    }
 }
