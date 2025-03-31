@@ -140,7 +140,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 120px;
+    font-size: 120px;    
     font-weight: 1000;
     display: inline-block;
     background-color: #fff;
@@ -200,7 +200,7 @@ body {
 }
 .landing .landing-cont h1{
     margin: -1px 0px;
-    font-size: 90px;
+    font-size: clamp(57px, 5vw, 90px);
     line-height: 1;
 }
 .landing .landing-cont .main-headings-bg{
@@ -331,9 +331,8 @@ body {
     z-index: 2;
 }
 
-
 /* SCreen Handler */
-@media (min-width: 1024px){
+@media (max-width: 1024px){
     .header .logo {
         height: 50px;
     }
@@ -342,7 +341,7 @@ body {
         padding-top: 100px;
     }
     .nav-menu a {
-        font-size: 80px;
+        font-size: clamp(30px, 6vw, 80px);
     }
     .landing .landing-cont h1{
         margin: -1px 0px;
