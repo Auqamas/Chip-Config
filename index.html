@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Londrina+Solid:wght@100;300;400;900&family=Megrim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet">
@@ -24,10 +25,10 @@
 
 <body>
   <!-- Loading Screen -->
-  <div class="loading-screen" id="loading-screen">
+  <!-- <div class="loading-screen" id="loading-screen">
     <div class="gradient-text" id="loading-text">Configure</div>
     <div class="progress-text" id="progress-text">0%</div>
-  </div>
+  </div> -->
   <!-- Loading Screen Ends -->
 
   <div class="main">
@@ -46,7 +47,7 @@
       <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li> 
           <li><a href="services.html">Services</a></li>
           <li><a href="team.html">Team</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -95,12 +96,56 @@
 
     </section>
 
-    <section class="projects">
-      
+    <section class="page-2">
+
+      <div class="animated-para" id="animatedPara">
+        <p><span class="line1"> Chip-Config is a modern technology solutions provider, specializing in</span><span class="line2"> innovative chip design and configuration services. Our cutting-edge </span><span class="line3"> approach ensures optimized performance, seamless integration, and reliability</span><span class="line4"> for various applications. With a commitment to excellence, </span><span class="line5"> we empower businesses with advanced semiconductor solutions tailored to their needs.</span></p>
+      </div>
+
+    </section>
+    
+    <div class="seperator">
+      <p class="main-headings-bg">Configure Chip-Engineering Inside Chip Config</p>
+    </div>
+
+    <section class="page-3">
+      <div class="core-cont">
+        <h1>Advanced Chip <br> <span class="gradient-text-all">Configuration </span> Tools</h1>
+        <p>Our platform gives you complete control over your semiconductor designs <br> with precision and reliability.</p>
+      </div>
+
+      <div class="core-items">
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cpu-icon lucide-cpu"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+          <h3 class="core-items-heading">Precision Engineering</h3>
+          <p>Fine-tune every aspect of your chip's performance with nanometer precision</p>
+        </div>
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circuit-board-icon lucide-circuit-board"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M11 9h4a2 2 0 0 0 2-2V3"/><circle cx="9" cy="9" r="2"/><path d="M7 21v-4a2 2 0 0 1 2-2h4"/><circle cx="15" cy="15" r="2"/></svg>          <h3 class="core-items-heading">Circuit Optimization</h3>
+          <p>Analyze and optimize complex circuit designs for maximum efficiency.</p>
+        </div>
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-icon lucide-zap"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>          <h3 class="core-items-heading">Power Management</h3>
+          <p>Balance performance and energy efficiency with advanced power optimization.</p>
+        </div>
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>          <h3 class="core-items-heading">Custom Configurations</h3>
+          <p>Create and save custom configurations for different applications and scenarios.</p>
+        </div>
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-server-icon lucide-server"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>          <h3 class="core-items-heading">Memory Architecture</h3>
+          <p>Optimize memory layouts and cache configurations for your specific workloads.</p>
+        </div>
+        <div class="core-single">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-icon lucide-loader"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>          <h3 class="core-items-heading">Clock Management</h3>
+          <p>Synchronize clock domains and manage timing across complex chip designs.</p>
+        </div>
+      </div>
     </section>
 
   </div>
 
 </body>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
 </html>
