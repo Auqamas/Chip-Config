@@ -198,7 +198,7 @@ main {
     position: absolute;
     top: 0;
     object-fit: cover;
-    filter: brightness(107%);
+    /* filter: brightness(107%); */
 }
 .landing .landing-cont{
     text-align: center;
@@ -440,7 +440,6 @@ main {
       grid-template-columns: 1fr;
     }
 }
-  
 
 @media (max-width: 1024px){
     .header .logo {

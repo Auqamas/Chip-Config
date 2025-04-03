@@ -38,14 +38,14 @@ function updateProgress() {
     if (progress < 100) {
         progress += 1;
         progressText.textContent = progress + "%";
-        setTimeout(updateProgress, 37);
+        setTimeout(updateProgress, 28);
     }
 }
 setTimeout(() => {
     document.getElementById('loading-screen').classList.add('loading-hide');
 }, 4000);
 
-setTimeout(changeText, 1000);
+setTimeout(changeText, 300);
 updateProgress();
 // Loading Screen Ends
 
