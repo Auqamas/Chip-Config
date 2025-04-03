@@ -198,6 +198,7 @@ main {
     position: absolute;
     top: 0;
     object-fit: cover;
+    filter: brightness(107%);
 }
 .landing .landing-cont{
     text-align: center;
@@ -400,12 +401,12 @@ main {
 .core-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 0px;
   padding: 10px 200px;
 }
 .core-single {
   text-align: center;
-  padding: 0px 30px;
+  padding: 0px 10px;
   background-color: transparent;
   margin-bottom: 40px;
 }
@@ -429,6 +430,7 @@ main {
   margin-bottom: 0.5rem;
   color: #555;
 }
+
 
 
 /* SCreen Handler */
