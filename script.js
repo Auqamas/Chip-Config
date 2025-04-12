@@ -89,4 +89,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // Animated Para end
 
-// Smooth Scroll
+// Swipper
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  spaceBetween: 60,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    }
+  }
+});
